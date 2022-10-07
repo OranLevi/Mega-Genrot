@@ -41,12 +41,15 @@ extension MainViewController: UICollectionViewDataSource {
         if indexPath.row == Constant.password.rawValue {
             cell.imageView.image = UIImage(systemName: "key.viewfinder")
             cell.textLabel.text = "Password"
+            cell.backgroundColor = UIColor.lightGray
         } else if indexPath.row == Constant.names.rawValue {
             cell.imageView.image = UIImage(systemName: "person.fill")
             cell.textLabel.text = "Names"
+            cell.backgroundColor = UIColor.systemYellow
         } else if indexPath.row == Constant.numbers.rawValue {
             cell.imageView.image = UIImage(systemName: "die.face.5")
             cell.textLabel.text = "Numbers"
+            cell.backgroundColor = UIColor.systemOrange
         }
         
         return cell

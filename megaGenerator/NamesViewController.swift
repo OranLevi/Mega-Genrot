@@ -18,6 +18,7 @@ class NamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.isUserInteractionEnabled = false
         // Do any additional setup after loading the view.
     }
     

@@ -27,6 +27,7 @@ class PasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordLengthLabel.text = "Password Length: \(Int(passwordLengthSlider.value))"
+        passwordTextField.isUserInteractionEnabled = false
     }
     
     @IBAction func generatorButton(_ sender: Any) {
