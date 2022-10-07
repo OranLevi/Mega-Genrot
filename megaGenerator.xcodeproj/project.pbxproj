@@ -17,6 +17,7 @@
 		17665EE628E9D08D00B11A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17665EE528E9D08D00B11A1B /* Assets.xcassets */; };
 		17665EE928E9D08D00B11A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17665EE728E9D08D00B11A1B /* LaunchScreen.storyboard */; };
 		17665EF128E9D54600B11A1B /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17665EF028E9D54600B11A1B /* MainCollectionViewCell.swift */; };
+		17F4D29028EF6E92007D9EC4 /* NamesArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		17665EE828E9D08D00B11A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17665EEA28E9D08D00B11A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17665EF028E9D54600B11A1B /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesArrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,11 @@
 			children = (
 				17665EDC28E9D08C00B11A1B /* AppDelegate.swift */,
 				17665EDE28E9D08C00B11A1B /* SceneDelegate.swift */,
-				17665EE228E9D08C00B11A1B /* Main.storyboard */,
-				175E07AC28EB23A800697442 /* VC */,
 				17665EF028E9D54600B11A1B /* MainCollectionViewCell.swift */,
+				17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */,
+				175E07AC28EB23A800697442 /* VC */,
 				17665EE528E9D08D00B11A1B /* Assets.xcassets */,
+				17665EE228E9D08C00B11A1B /* Main.storyboard */,
 				17665EE728E9D08D00B11A1B /* LaunchScreen.storyboard */,
 				17665EEA28E9D08D00B11A1B /* Info.plist */,
 			);
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17665EE128E9D08C00B11A1B /* MainViewController.swift in Sources */,
+				17F4D29028EF6E92007D9EC4 /* NamesArrays.swift in Sources */,
 				175E07A928EB234A00697442 /* NamesViewController.swift in Sources */,
 				175E07A728EB233300697442 /* PasswordViewController.swift in Sources */,
 				17665EDD28E9D08C00B11A1B /* AppDelegate.swift in Sources */,
