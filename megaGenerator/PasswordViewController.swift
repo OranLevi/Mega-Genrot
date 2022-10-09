@@ -16,6 +16,7 @@ class PasswordViewController: UIViewController {
     @IBOutlet weak var passwordLengthLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordLengthSlider: UISlider!
+    @IBOutlet weak var copyButton: UIButton!
     
     let numbers = ["0","1","2","3","4","5","6","7","8","9"]
     let lowerCharacters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
@@ -33,7 +34,7 @@ class PasswordViewController: UIViewController {
     @IBAction func generatorButton(_ sender: Any) {
         
         if !lowerCaseSwitch.isOn && !upperCaseSwitch.isOn && !specialSymbolsSwitch.isOn && !numbersSwitch.isOn {
-            passwordTextField.text! = "Error"
+            passwordTextField.text! = "Error: Choose one of the options"
             return
         }
         
@@ -56,7 +57,6 @@ class PasswordViewController: UIViewController {
             if numbersSwitch.isOn {
                 passwordGenerator += numbers.randomElement()!
             }
-            
         }
         
         passwordTextField.text = passwordGenerator
@@ -68,8 +68,6 @@ class PasswordViewController: UIViewController {
     }
     
     @IBAction func copyButton(_ sender: Any) {
-        
-        let pasteboard = UIPasteboard.general
-        pasteboard.string = passwordTextField.text
+        Service().copyButton(textField: passwordTextField, button: copyButton)
     }
 }

@@ -13,6 +13,7 @@ class NamesViewController: UIViewController {
     @IBOutlet weak var femaleNameSwitch: UISwitch!
     @IBOutlet weak var surnameSwitch: UISwitch!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var copyButton: UIButton!
     
     var nameGenerator = ""
     
@@ -52,9 +53,7 @@ class NamesViewController: UIViewController {
     }
     
     @IBAction func copyButton(_ sender: Any) {
-        
-        let pasteboard = UIPasteboard.general
-        pasteboard.string = nameTextField.text
+        Service().copyButton(textField: nameTextField, button: copyButton)
     }
     
 }

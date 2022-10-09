@@ -12,6 +12,7 @@ class NumbersViewController: UIViewController {
     @IBOutlet weak var numberFromTextField: UITextField!
     @IBOutlet weak var numberToTextField: UITextField!
     @IBOutlet weak var numbersTextField: UITextField!
+    @IBOutlet weak var copyButton: UIButton!
     
     var numberGenerator = ""
     
@@ -27,27 +28,25 @@ class NumbersViewController: UIViewController {
         numbersTextField.text = ""
         
         if numberFromTextField.text!.isEmpty || numberToTextField.text!.isEmpty{
-            numbersTextField.text = "Error"
+            numbersTextField.text = "Error: empty fields"
             return
         }
-        
-        if numberFromTextField.text! > numberToTextField.text! {
-            numbersTextField.text = "Error"
-            return
-        }
-        
+
         let lower: Int = Int(numberFromTextField.text!)!
         let bigger: Int = Int(numberToTextField.text!)!
         
-        let randomInt = Int.random(in: lower..<bigger)
-        
-        numbersTextField.text = String(randomInt)
+        if lower < bigger {
+            let randomInt = Int.random(in: lower..<bigger+1)
+            numbersTextField.text = String(randomInt)
+        } else if lower > bigger {
+            numbersTextField.text = "Error: number from is bigger than to number"
+        } else {
+            numbersTextField.text = "Error"
+        }
     }
     
     @IBAction func copyButton(_ sender: Any) {
-        
-        let pasteboard = UIPasteboard.general
-        pasteboard.string = numbersTextField.text
+        Service().copyButton(textField: numbersTextField, button: copyButton)
     }
     
 }

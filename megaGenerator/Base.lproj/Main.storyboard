@@ -74,11 +74,9 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp6-ft-cJM">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="mHW-sl-DVe"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Generator">
                                             <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
@@ -89,11 +87,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-Gu-7kx">
                                         <rect key="frame" x="0.0" y="56" width="358" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="WQi-TX-rFH"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Copy">
                                             <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
@@ -163,6 +159,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="copyButton" destination="BZI-Gu-7kx" id="SDf-8T-Khj"/>
                         <outlet property="lowerCaseSwitch" destination="GjG-fA-L7h" id="GLL-zx-zFO"/>
                         <outlet property="numbersSwitch" destination="rcU-hv-px1" id="tcy-2C-vd1"/>
                         <outlet property="passwordLengthLabel" destination="jsI-1N-CzG" id="Ufu-7P-eu3"/>
@@ -372,6 +369,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="copyButton" destination="aKJ-tS-7g0" id="ujN-mM-qNo"/>
                         <outlet property="femaleNameSwitch" destination="gFh-MO-jxx" id="ebW-kq-3PZ"/>
                         <outlet property="maleNameSwitch" destination="RLk-27-n0l" id="7D4-J0-Ymt"/>
                         <outlet property="nameTextField" destination="UYw-cP-smY" id="WuM-ki-LIW"/>
@@ -447,6 +445,7 @@
                                             <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="copyButton:" destination="8CW-3A-7sb" eventType="touchUpInside" id="tKb-hQ-tly"/>
                                             <action selector="copyButton:" destination="MqL-WM-nG8" eventType="touchUpInside" id="tf5-Yq-KGF"/>
                                         </connections>
                                     </button>
@@ -503,12 +502,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="copyButton" destination="f3a-IR-47i" id="seq-Vs-8k0"/>
                         <outlet property="numberFromTextField" destination="aVI-jJ-vKZ" id="Ba9-w7-XQQ"/>
                         <outlet property="numberToTextField" destination="u6z-BH-URw" id="QQl-gY-2E7"/>
                         <outlet property="numbersTextField" destination="JF4-HQ-5oA" id="S5V-2L-GEL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zab-m7-QMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8CW-3A-7sb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1865" y="679"/>
         </scene>

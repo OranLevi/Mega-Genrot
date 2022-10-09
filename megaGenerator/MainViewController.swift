@@ -18,12 +18,6 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    enum Constant: Int{
-        case password = 0
-        case names = 1
-        case numbers = 2
-    }
-    
     func nextViewController(identifier: String){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: identifier)
         self.navigationController?.pushViewController(vc!, animated: true)
@@ -38,16 +32,16 @@ extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCollectionViewCell
         
-        if indexPath.row == Constant.password.rawValue {
-            cell.imageView.image = UIImage(systemName: "key.viewfinder")
+        if indexPath.row == Service.Constant.password.rawValue {
+            cell.imageView.image = UIImage(systemName: "key.viewfinder")?.withTintColor(.systemBlue, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "Password"
             cell.backgroundColor = UIColor.lightGray
-        } else if indexPath.row == Constant.names.rawValue {
-            cell.imageView.image = UIImage(systemName: "person.fill")
+        } else if indexPath.row == Service.Constant.names.rawValue {
+            cell.imageView.image = UIImage(systemName: "person.fill")?.withTintColor(.systemGreen, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "Names"
             cell.backgroundColor = UIColor.systemYellow
-        } else if indexPath.row == Constant.numbers.rawValue {
-            cell.imageView.image = UIImage(systemName: "die.face.5")
+        } else if indexPath.row == Service.Constant.numbers.rawValue {
+            cell.imageView.image = UIImage(systemName: "die.face.5")?.withTintColor(.brown, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "Numbers"
             cell.backgroundColor = UIColor.systemOrange
         }
@@ -56,13 +50,13 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == Constant.password.rawValue {
+        if indexPath.row == Service.Constant.password.rawValue {
             nextViewController(identifier: "passwordVC")
             
-        } else if indexPath.row == Constant.names.rawValue {
+        } else if indexPath.row == Service.Constant.names.rawValue {
             nextViewController(identifier: "namesVC")
             
-        } else if indexPath.row == Constant.numbers.rawValue {
+        } else if indexPath.row == Service.Constant.numbers.rawValue {
             nextViewController(identifier: "numbersVC")
         }
     }
