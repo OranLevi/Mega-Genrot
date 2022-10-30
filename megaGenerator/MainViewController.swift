@@ -32,16 +32,26 @@ extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCollectionViewCell
         
+        cell.layer.cornerRadius = 30
+//        cell.layer.masksToBounds = true
+  
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.masksToBounds = false
+        
+        
         if indexPath.row == Service.Constant.password.rawValue {
-            cell.imageView.image = UIImage(systemName: "key.viewfinder")?.withTintColor(.systemBlue, renderingMode: .alwaysOriginal)
+            cell.imageView.image = UIImage(systemName: "key.viewfinder")?.withTintColor(.white, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "Password"
-            cell.backgroundColor = UIColor.lightGray
+            cell.backgroundColor = UIColor.systemBlue
         } else if indexPath.row == Service.Constant.names.rawValue {
-            cell.imageView.image = UIImage(systemName: "person.fill")?.withTintColor(.systemGreen, renderingMode: .alwaysOriginal)
+            cell.imageView.image = UIImage(systemName: "person.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "Names"
             cell.backgroundColor = UIColor.systemYellow
         } else if indexPath.row == Service.Constant.numbers.rawValue {
-            cell.imageView.image = UIImage(systemName: "die.face.5")?.withTintColor(.brown, renderingMode: .alwaysOriginal)
+            cell.imageView.image = UIImage(systemName: "die.face.5")?.withTintColor(.white, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "Numbers"
             cell.backgroundColor = UIColor.systemOrange
         }
@@ -64,8 +74,14 @@ extension MainViewController: UICollectionViewDataSource {
 
 extension MainViewController : UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width / 2 - 5
-        return CGSize(width: width  , height: width )
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let width = collectionView.frame.width / 2 - 5
+//        return CGSize(width: width  , height: width )
+//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        let padding: CGFloat =  30
+        let collectionViewSize = collectionView.frame.size.width - padding
+        return CGSize(width: collectionViewSize/2, height: 200)
     }
 }

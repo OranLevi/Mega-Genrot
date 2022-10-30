@@ -25,7 +25,7 @@
 		175E07A628EB233300697442 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		175E07A828EB234A00697442 /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
 		175E07AA28EB236700697442 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
-		17665ED928E9D08C00B11A1B /* megaGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = megaGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17665ED928E9D08C00B11A1B /* MegaGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17665EDC28E9D08C00B11A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17665EDE28E9D08C00B11A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17665EE028E9D08C00B11A1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		17665ED028E9D08C00B11A1B = {
 			isa = PBXGroup;
 			children = (
-				17665EDB28E9D08C00B11A1B /* megaGenerator */,
+				17665EDB28E9D08C00B11A1B /* MegaGenerator */,
 				17665EDA28E9D08C00B11A1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,12 +71,12 @@
 		17665EDA28E9D08C00B11A1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17665ED928E9D08C00B11A1B /* megaGenerator.app */,
+				17665ED928E9D08C00B11A1B /* MegaGenerator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17665EDB28E9D08C00B11A1B /* megaGenerator */ = {
+		17665EDB28E9D08C00B11A1B /* MegaGenerator */ = {
 			isa = PBXGroup;
 			children = (
 				17665EDC28E9D08C00B11A1B /* AppDelegate.swift */,
@@ -89,7 +89,7 @@
 				17665EE728E9D08D00B11A1B /* LaunchScreen.storyboard */,
 				17665EEA28E9D08D00B11A1B /* Info.plist */,
 			);
-			path = megaGenerator;
+			path = MegaGenerator;
 			sourceTree = "<group>";
 		};
 		17DEC63D28F28B13002EF747 /* Cells */ = {
@@ -112,9 +112,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17665ED828E9D08C00B11A1B /* megaGenerator */ = {
+		17665ED828E9D08C00B11A1B /* MegaGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17665EED28E9D08D00B11A1B /* Build configuration list for PBXNativeTarget "megaGenerator" */;
+			buildConfigurationList = 17665EED28E9D08D00B11A1B /* Build configuration list for PBXNativeTarget "MegaGenerator" */;
 			buildPhases = (
 				17665ED528E9D08C00B11A1B /* Sources */,
 				17665ED628E9D08C00B11A1B /* Frameworks */,
@@ -124,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = megaGenerator;
+			name = MegaGenerator;
 			productName = megaGenerator;
-			productReference = 17665ED928E9D08C00B11A1B /* megaGenerator.app */;
+			productReference = 17665ED928E9D08C00B11A1B /* MegaGenerator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 17665ED428E9D08C00B11A1B /* Build configuration list for PBXProject "megaGenerator" */;
+			buildConfigurationList = 17665ED428E9D08C00B11A1B /* Build configuration list for PBXProject "MegaGenerator" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17665ED828E9D08C00B11A1B /* megaGenerator */,
+				17665ED828E9D08C00B11A1B /* MegaGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -383,7 +383,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Oran.megaGenerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oran.MegaGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -397,7 +397,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17665ED428E9D08C00B11A1B /* Build configuration list for PBXProject "megaGenerator" */ = {
+		17665ED428E9D08C00B11A1B /* Build configuration list for PBXProject "MegaGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17665EEB28E9D08D00B11A1B /* Debug */,
@@ -406,7 +406,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17665EED28E9D08D00B11A1B /* Build configuration list for PBXNativeTarget "megaGenerator" */ = {
+		17665EED28E9D08D00B11A1B /* Build configuration list for PBXNativeTarget "MegaGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17665EEE28E9D08D00B11A1B /* Debug */,

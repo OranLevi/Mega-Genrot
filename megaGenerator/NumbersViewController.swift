@@ -28,7 +28,7 @@ class NumbersViewController: UIViewController {
         numbersTextField.text = ""
         
         if numberFromTextField.text!.isEmpty || numberToTextField.text!.isEmpty{
-            numbersTextField.text = "Error: empty fields"
+            numbersTextField.text = "Error: Empty fields"
             return
         }
 
@@ -39,7 +39,7 @@ class NumbersViewController: UIViewController {
             let randomInt = Int.random(in: lower..<bigger+1)
             numbersTextField.text = String(randomInt)
         } else if lower > bigger {
-            numbersTextField.text = "Error: number from is bigger than to number"
+            numbersTextField.text = "Error: Number from is bigger than to number"
         } else {
             numbersTextField.text = "Error"
         }
