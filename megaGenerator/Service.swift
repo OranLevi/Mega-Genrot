@@ -14,6 +14,8 @@ class Service{
         case password = 0
         case names = 1
         case numbers = 2
+        case coin = 3
+        case list = 4
     }
     
     func copyButton(textField: UITextField, button: UIButton) {

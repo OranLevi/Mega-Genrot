@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -54,6 +54,14 @@ extension MainViewController: UICollectionViewDataSource {
             cell.imageView.image = UIImage(systemName: "die.face.5")?.withTintColor(.white, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "Numbers"
             cell.backgroundColor = UIColor.systemOrange
+        } else if indexPath.row == Service.Constant.coin.rawValue {
+            cell.imageView.image = UIImage(systemName: "dollarsign.circle")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+            cell.textLabel.text = "Coin"
+            cell.backgroundColor = UIColor.systemCyan
+        } else if indexPath.row == Service.Constant.list.rawValue {
+            cell.imageView.image = UIImage(systemName: "list.bullet")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+            cell.textLabel.text = "List"
+            cell.backgroundColor = UIColor.systemTeal
         }
         
         return cell
@@ -68,6 +76,12 @@ extension MainViewController: UICollectionViewDataSource {
             
         } else if indexPath.row == Service.Constant.numbers.rawValue {
             nextViewController(identifier: "numbersVC")
+            
+        } else if indexPath.row == Service.Constant.coin.rawValue {
+            nextViewController(identifier: "coinVC")
+        }
+        else if indexPath.row == Service.Constant.list.rawValue {
+            nextViewController(identifier: "listVC")
         }
     }
 }
