@@ -1,7 +1,7 @@
 
 MegaGenerator
 ==========
-megaGenerator is an application to generator names, numbers and passwords - it is possible to create a random number between numbers, creating a password from many choice of a lowercase letter, uppercase letter, Specail Symbols. the app can random a number (from, to) . A quick copy can be made for convenience.
+An application for generating names, numbers, flipping a coin, custom list and creating a password from a multiple choice of a lowercase letter, an uppercase letter, Special Symbols. The app can make a random number (from, to). A quick copy can be made for convenience, the user can generating from custom list A random selection from a customized list that the user enters .
 
 ## Screenshots
   <p float="left">
