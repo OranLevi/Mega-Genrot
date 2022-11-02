@@ -16,6 +16,7 @@ class PasswordViewController: UIViewController {
     @IBOutlet weak var passwordLengthLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordLengthSlider: UISlider!
+    @IBOutlet weak var generatorButton: UIButton!
     @IBOutlet weak var copyButton: UIButton!
     
     let numbers = ["0","1","2","3","4","5","6","7","8","9"]
@@ -27,8 +28,14 @@ class PasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupButton()
         passwordLengthLabel.text = "Password Length: \(Int(passwordLengthSlider.value))"
         passwordTextField.isUserInteractionEnabled = false
+    }
+    
+    func setupButton() {
+        generatorButton.layer.cornerRadius = 15
+        copyButton.layer.cornerRadius = 15
     }
     
     @IBAction func generatorButton(_ sender: Any) {

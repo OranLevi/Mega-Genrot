@@ -9,20 +9,35 @@ import UIKit
 
 class ListViewController: UIViewController {
     
-    @IBOutlet weak var listTableview: UITableView!
+    @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var displayTextField: UITextField!
     @IBOutlet weak var copyButton: UIButton!
+
+    @IBOutlet weak var generatorButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
+
+    @IBOutlet weak var addToListButton: UIButton!
     var listArray = [String]()
     var deleteButtonTap = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        listTableview.dataSource = self
-        listTableview.delegate = self
+        setupButton()
+        listTableView.dataSource = self
+        listTableView.delegate = self
+        displayTextField.isUserInteractionEnabled = false
+    }
+
+    func setupButton() {
+        addToListButton.layer.cornerRadius = 15
+        deleteButton.layer.cornerRadius = 15
+        generatorButton.layer.cornerRadius = 15
+        copyButton.layer.cornerRadius = 15
     }
     
     @IBAction func addToListButton(_ sender: Any) {
+        listTableView.isEditing = false
         var textField = UITextField()
         
         let alert = UIAlertController(title: "Add new item", message: "", preferredStyle: .alert)
@@ -34,41 +49,51 @@ class ListViewController: UIViewController {
             
             if textField.text != "" {
                 self.listArray.append(textField.text!)
-                self.listTableview.reloadData()
+                self.listTableView.reloadData()
             }
         }
         
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { action in
+            
+        }
+        
         alert.addAction(action)
+        alert.addAction(cancel)
         present(alert, animated: true, completion: nil)
     }
     
     
     @IBAction func deleteButton(_ sender: Any) {
+        if listArray.isEmpty {
+            return
+        }
         if deleteButtonTap {
-            listTableview.isEditing = false
+            listTableView.isEditing = false
             deleteButtonTap = false
         } else {
-            listTableview.isEditing = true
+            listTableView.isEditing = true
             deleteButtonTap = true
         }
     }
     
     @IBAction func generatorButton(_ sender: Any) {
         displayTextField.text = listArray.randomElement()
+        listTableView.isEditing = false
     }
     
     @IBAction func copyButton(_ sender: Any) {
         Service().copyButton(textField: displayTextField, button: copyButton)
+        listTableView.isEditing = false
     }
 }
 
-extension ListViewController: UITableViewDataSource{
+extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "list", for: indexPath) as! ListableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "list", for: indexPath) as! ListTableViewCell
         
         cell.listTextLabel.text = listArray[indexPath.row]
         return cell
@@ -84,6 +109,7 @@ extension ListViewController: UITableViewDataSource{
         listArray.insert(itemToMove, at: destinationIndexPath.row)
     }
 }
+
 extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
         return false

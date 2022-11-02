@@ -20,7 +20,7 @@
 		17BFEA6B28F0427200F66374 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BFEA6A28F0427200F66374 /* Service.swift */; };
 		17DF8FF4290ECD2000C2807A /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF3290ECD2000C2807A /* CoinViewController.swift */; };
 		17DF8FF6290ED6B900C2807A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF5290ED6B900C2807A /* ListViewController.swift */; };
-		17DF8FF8290EDFF600C2807A /* ListableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF7290EDFF600C2807A /* ListableViewCell.swift */; };
+		17DF8FF8290EDFF600C2807A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF7290EDFF600C2807A /* ListTableViewCell.swift */; };
 		17F4D29028EF6E92007D9EC4 /* NamesArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		17BFEA6A28F0427200F66374 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		17DF8FF3290ECD2000C2807A /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		17DF8FF5290ED6B900C2807A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		17DF8FF7290EDFF600C2807A /* ListableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListableViewCell.swift; sourceTree = "<group>"; };
+		17DF8FF7290EDFF600C2807A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesArrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +71,7 @@
 		17665ED028E9D08C00B11A1B = {
 			isa = PBXGroup;
 			children = (
-				17DF8FF7290EDFF600C2807A /* ListableViewCell.swift */,
+				17DF8FF7290EDFF600C2807A /* ListTableViewCell.swift */,
 				17665EDB28E9D08C00B11A1B /* MegaGenerator */,
 				17665EDA28E9D08C00B11A1B /* Products */,
 			);
@@ -193,7 +193,7 @@
 				17F4D29028EF6E92007D9EC4 /* NamesArrays.swift in Sources */,
 				175E07A928EB234A00697442 /* NamesViewController.swift in Sources */,
 				175E07A728EB233300697442 /* PasswordViewController.swift in Sources */,
-				17DF8FF8290EDFF600C2807A /* ListableViewCell.swift in Sources */,
+				17DF8FF8290EDFF600C2807A /* ListTableViewCell.swift in Sources */,
 				17665EDD28E9D08C00B11A1B /* AppDelegate.swift in Sources */,
 				17DF8FF6290ED6B900C2807A /* ListViewController.swift in Sources */,
 				17BFEA6B28F0427200F66374 /* Service.swift in Sources */,
