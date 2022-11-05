@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1759533F291586A900CA1EFA /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759533E291586A900CA1EFA /* ListTableViewCell.swift */; };
 		175E07A728EB233300697442 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E07A628EB233300697442 /* PasswordViewController.swift */; };
 		175E07A928EB234A00697442 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E07A828EB234A00697442 /* NamesViewController.swift */; };
 		175E07AB28EB236700697442 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E07AA28EB236700697442 /* NumbersViewController.swift */; };
@@ -18,6 +17,7 @@
 		17665EE628E9D08D00B11A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17665EE528E9D08D00B11A1B /* Assets.xcassets */; };
 		17665EE928E9D08D00B11A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17665EE728E9D08D00B11A1B /* LaunchScreen.storyboard */; };
 		17665EF128E9D54600B11A1B /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17665EF028E9D54600B11A1B /* MainCollectionViewCell.swift */; };
+		177A723F2916952F0082DB66 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A723E2916952F0082DB66 /* ListTableViewCell.swift */; };
 		17BFEA6B28F0427200F66374 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BFEA6A28F0427200F66374 /* Service.swift */; };
 		17DF8FF4290ECD2000C2807A /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF3290ECD2000C2807A /* CoinViewController.swift */; };
 		17DF8FF6290ED6B900C2807A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF5290ED6B900C2807A /* ListViewController.swift */; };
@@ -25,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1759533E291586A900CA1EFA /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		175E07A628EB233300697442 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		175E07A828EB234A00697442 /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
 		175E07AA28EB236700697442 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		17665EE828E9D08D00B11A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17665EEA28E9D08D00B11A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17665EF028E9D54600B11A1B /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		177A723E2916952F0082DB66 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		17BFEA6A28F0427200F66374 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		17DF8FF3290ECD2000C2807A /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		17DF8FF5290ED6B900C2807A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				17665EF028E9D54600B11A1B /* MainCollectionViewCell.swift */,
-				1759533E291586A900CA1EFA /* ListTableViewCell.swift */,
+				177A723E2916952F0082DB66 /* ListTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -194,13 +194,13 @@
 				175E07A928EB234A00697442 /* NamesViewController.swift in Sources */,
 				175E07A728EB233300697442 /* PasswordViewController.swift in Sources */,
 				17665EDD28E9D08C00B11A1B /* AppDelegate.swift in Sources */,
+				177A723F2916952F0082DB66 /* ListTableViewCell.swift in Sources */,
 				17DF8FF6290ED6B900C2807A /* ListViewController.swift in Sources */,
 				17BFEA6B28F0427200F66374 /* Service.swift in Sources */,
 				175E07AB28EB236700697442 /* NumbersViewController.swift in Sources */,
 				17665EDF28E9D08C00B11A1B /* SceneDelegate.swift in Sources */,
 				17665EF128E9D54600B11A1B /* MainCollectionViewCell.swift in Sources */,
 				17DF8FF4290ECD2000C2807A /* CoinViewController.swift in Sources */,
-				1759533F291586A900CA1EFA /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
