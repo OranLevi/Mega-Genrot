@@ -12,12 +12,10 @@ class ListViewController: UIViewController {
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var displayTextField: UITextField!
     @IBOutlet weak var copyButton: UIButton!
-
     @IBOutlet weak var generatorButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
-    
-
     @IBOutlet weak var addToListButton: UIButton!
+    
     var listArray = [String]()
     var deleteButtonTap = false
     
@@ -28,7 +26,7 @@ class ListViewController: UIViewController {
         listTableView.delegate = self
         displayTextField.isUserInteractionEnabled = false
     }
-
+    
     func setupButton() {
         addToListButton.layer.cornerRadius = 15
         deleteButton.layer.cornerRadius = 15
@@ -46,15 +44,12 @@ class ListViewController: UIViewController {
             textField = alertTextField
         }
         let action = UIAlertAction(title: "Add to list", style: .default) { action in
-            
             if textField.text != "" {
                 self.listArray.append(textField.text!)
                 self.listTableView.reloadData()
             }
         }
-        
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { action in
-            
         }
         
         alert.addAction(action)

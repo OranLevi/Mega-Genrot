@@ -22,7 +22,6 @@ class NamesViewController: UIViewController {
         super.viewDidLoad()
         setupButton()
         nameTextField.isUserInteractionEnabled = false
-        // Do any additional setup after loading the view.
     }
     
     func setupButton() {

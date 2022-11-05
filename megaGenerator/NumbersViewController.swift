@@ -15,14 +15,12 @@ class NumbersViewController: UIViewController {
     @IBOutlet weak var generatorButton: UIButton!
     @IBOutlet weak var copyButton: UIButton!
 
-    
     var numberGenerator = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButton()
         numbersTextField.isUserInteractionEnabled = false
-        // Do any additional setup after loading the view.
     }
     
     func setupButton() {

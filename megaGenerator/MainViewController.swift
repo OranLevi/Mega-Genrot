@@ -15,7 +15,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        // Do any additional setup after loading the view.
+        collectionView.isScrollEnabled = true
+        collectionView.isUserInteractionEnabled = true
+        collectionView.alwaysBounceVertical = true
     }
     
     func nextViewController(identifier: String){
@@ -33,14 +35,11 @@ extension MainViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCollectionViewCell
         
         cell.layer.cornerRadius = 30
-//        cell.layer.masksToBounds = true
-  
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         cell.layer.shadowRadius = 2.0
         cell.layer.shadowOpacity = 0.5
         cell.layer.masksToBounds = false
-        
         
         if indexPath.row == Service.Constant.password.rawValue {
             cell.imageView.image = UIImage(systemName: "key.viewfinder")?.withTintColor(.white, renderingMode: .alwaysOriginal)
@@ -88,12 +87,7 @@ extension MainViewController: UICollectionViewDataSource {
 
 extension MainViewController : UICollectionViewDelegateFlowLayout {
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let width = collectionView.frame.width / 2 - 5
-//        return CGSize(width: width  , height: width )
-//    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-    {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let padding: CGFloat =  30
         let collectionViewSize = collectionView.frame.size.width - padding
         return CGSize(width: collectionViewSize/2, height: 200)
