@@ -6,5 +6,7 @@ An application for generating names, numbers, flipping a coin, custom list and c
 ## Screenshots
   <p float="left">
     <img src="./Screenshot/Screenshot0.png" width="209" />&nbsp;&nbsp;
-  <img src="./Screenshot/Screenshot1.png" width="209" />&nbsp;
+  <img src="./Screenshot/Screenshot1.png" width="209" />&nbsp;&nbsp;
+    <img src="./Screenshot/Screenshot2.png" width="209" />&nbsp;&nbsp;
+      <img src="./Screenshot/Screenshot3.gif" width="209" />&nbsp;
 </p>
