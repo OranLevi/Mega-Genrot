@@ -1,6 +1,6 @@
 //
 //  Service.swift
-//  megaGenerator
+//  Mega Genrot
 //
 //  Created by Oran Levi on 07/10/2022.
 //

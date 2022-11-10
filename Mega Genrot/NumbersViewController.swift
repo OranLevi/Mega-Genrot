@@ -1,6 +1,6 @@
 //
 //  NumbersViewController.swift
-//  megaGenerator
+//  Mega Genrot
 //
 //  Created by Oran Levi on 03/10/2022.
 //

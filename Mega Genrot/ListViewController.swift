@@ -1,6 +1,6 @@
 //
 //  ListViewController.swift
-//  MegaGenerator
+//  Mega Genrot
 //
 //  Created by Oran Levi on 30/10/2022.
 //
