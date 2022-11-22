@@ -10,8 +10,8 @@ An application for generating names, numbers, flipping a coin, custom list and c
     <img src="./Screenshot/Screenshot2.png" width="209" />&nbsp;&nbsp;
       <img src="./Screenshot/Screenshot3.gif" width="209" />&nbsp;
 </p>
+
 ## Download From App Store
-<br>
 <p align="center">
 <a href="https://apps.apple.com/il/app/mega-genrot-random-generator/id6444267005"><img src="./Screenshot/Download_App_Store.jpg"></a>
 </p>
