@@ -16,11 +16,13 @@ class Service{
         case numbers = 2
         case coin = 3
         case list = 4
+        case hexColor = 5
+        case animalsNames = 6
     }
     
-    func copyButton(textField: UITextField, button: UIButton) {
+    func copyButton(textToCopy: AnyObject, button: UIButton) {
         let pasteboard = UIPasteboard.general
-        pasteboard.string = textField.text
+        pasteboard.string = textToCopy.text
         button.setTitle("Copied", for: .normal)
         button.setImage(UIImage(systemName: "checkmark"), for: .normal)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

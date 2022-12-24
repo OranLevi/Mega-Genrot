@@ -77,7 +77,7 @@ class ListViewController: UIViewController {
     }
     
     @IBAction func copyButton(_ sender: Any) {
-        Service().copyButton(textField: displayTextField, button: copyButton)
+        Service().copyButton(textToCopy: displayTextField, button: copyButton)
         listTableView.isEditing = false
     }
 }

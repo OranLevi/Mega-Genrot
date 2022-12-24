@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174D674D2955ABE5007DC4B5 /* HexColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D674C2955ABE5007DC4B5 /* HexColorViewController.swift */; };
+		174D674F2955ADF5007DC4B5 /* HexColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D674E2955ADF5007DC4B5 /* HexColorCollectionViewCell.swift */; };
+		174D6753295632BE007DC4B5 /* AnimalNamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D6752295632BE007DC4B5 /* AnimalNamesViewController.swift */; };
 		175E07A728EB233300697442 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E07A628EB233300697442 /* PasswordViewController.swift */; };
 		175E07A928EB234A00697442 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E07A828EB234A00697442 /* NamesViewController.swift */; };
 		175E07AB28EB236700697442 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E07AA28EB236700697442 /* NumbersViewController.swift */; };
@@ -21,10 +24,13 @@
 		17BFEA6B28F0427200F66374 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BFEA6A28F0427200F66374 /* Service.swift */; };
 		17DF8FF4290ECD2000C2807A /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF3290ECD2000C2807A /* CoinViewController.swift */; };
 		17DF8FF6290ED6B900C2807A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF8FF5290ED6B900C2807A /* ListViewController.swift */; };
-		17F4D29028EF6E92007D9EC4 /* NamesArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */; };
+		17F4D29028EF6E92007D9EC4 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4D28F28EF6E92007D9EC4 /* Arrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174D674C2955ABE5007DC4B5 /* HexColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorViewController.swift; sourceTree = "<group>"; };
+		174D674E2955ADF5007DC4B5 /* HexColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		174D6752295632BE007DC4B5 /* AnimalNamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalNamesViewController.swift; sourceTree = "<group>"; };
 		175E07A628EB233300697442 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		175E07A828EB234A00697442 /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
 		175E07AA28EB236700697442 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +47,7 @@
 		17BFEA6A28F0427200F66374 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		17DF8FF3290ECD2000C2807A /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		17DF8FF5290ED6B900C2807A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesArrays.swift; sourceTree = "<group>"; };
+		17F4D28F28EF6E92007D9EC4 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 				175E07AA28EB236700697442 /* NumbersViewController.swift */,
 				17DF8FF3290ECD2000C2807A /* CoinViewController.swift */,
 				17DF8FF5290ED6B900C2807A /* ListViewController.swift */,
+				174D674C2955ABE5007DC4B5 /* HexColorViewController.swift */,
+				174D6752295632BE007DC4B5 /* AnimalNamesViewController.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 			children = (
 				17665EF028E9D54600B11A1B /* MainCollectionViewCell.swift */,
 				177A723E2916952F0082DB66 /* ListTableViewCell.swift */,
+				174D674E2955ADF5007DC4B5 /* HexColorCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -112,7 +121,7 @@
 		17DEC63E28F28B28002EF747 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				17F4D28F28EF6E92007D9EC4 /* NamesArrays.swift */,
+				17F4D28F28EF6E92007D9EC4 /* Arrays.swift */,
 				17BFEA6A28F0427200F66374 /* Service.swift */,
 			);
 			name = Service;
@@ -190,13 +199,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				17665EE128E9D08C00B11A1B /* MainViewController.swift in Sources */,
-				17F4D29028EF6E92007D9EC4 /* NamesArrays.swift in Sources */,
+				17F4D29028EF6E92007D9EC4 /* Arrays.swift in Sources */,
 				175E07A928EB234A00697442 /* NamesViewController.swift in Sources */,
 				175E07A728EB233300697442 /* PasswordViewController.swift in Sources */,
 				17665EDD28E9D08C00B11A1B /* AppDelegate.swift in Sources */,
 				177A723F2916952F0082DB66 /* ListTableViewCell.swift in Sources */,
 				17DF8FF6290ED6B900C2807A /* ListViewController.swift in Sources */,
 				17BFEA6B28F0427200F66374 /* Service.swift in Sources */,
+				174D674F2955ADF5007DC4B5 /* HexColorCollectionViewCell.swift in Sources */,
+				174D674D2955ABE5007DC4B5 /* HexColorViewController.swift in Sources */,
+				174D6753295632BE007DC4B5 /* AnimalNamesViewController.swift in Sources */,
 				175E07AB28EB236700697442 /* NumbersViewController.swift in Sources */,
 				17665EDF28E9D08C00B11A1B /* SceneDelegate.swift in Sources */,
 				17665EF128E9D54600B11A1B /* MainCollectionViewCell.swift in Sources */,

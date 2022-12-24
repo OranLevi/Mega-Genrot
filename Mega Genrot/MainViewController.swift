@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 7
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -61,8 +61,15 @@ extension MainViewController: UICollectionViewDataSource {
             cell.imageView.image = UIImage(systemName: "list.bullet")?.withTintColor(.white, renderingMode: .alwaysOriginal)
             cell.textLabel.text = "List"
             cell.backgroundColor = UIColor.systemTeal
+        } else if indexPath.row == Service.Constant.hexColor.rawValue {
+            cell.imageView.image = UIImage(systemName: "paintbrush")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+            cell.textLabel.text = "Hex Color"
+            cell.backgroundColor = UIColor.systemPurple
+        } else if indexPath.row == Service.Constant.animalsNames.rawValue {
+            cell.imageView.image = UIImage(systemName: "pawprint.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+            cell.textLabel.text = "Animals Names"
+            cell.backgroundColor = UIColor.systemIndigo
         }
-        
         return cell
     }
     
@@ -78,10 +85,17 @@ extension MainViewController: UICollectionViewDataSource {
             
         } else if indexPath.row == Service.Constant.coin.rawValue {
             nextViewController(identifier: "coinVC")
-        }
-        else if indexPath.row == Service.Constant.list.rawValue {
+            
+        } else if indexPath.row == Service.Constant.list.rawValue {
             nextViewController(identifier: "listVC")
         }
+        else if indexPath.row == Service.Constant.hexColor.rawValue {
+            nextViewController(identifier: "hexVC")
+        }
+        else if indexPath.row == Service.Constant.animalsNames.rawValue {
+            nextViewController(identifier: "animalsNameVC")
+        }
+        
     }
 }
 

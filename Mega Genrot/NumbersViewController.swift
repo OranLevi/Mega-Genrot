@@ -52,7 +52,7 @@ class NumbersViewController: UIViewController {
     }
     
     @IBAction func copyButton(_ sender: Any) {
-        Service().copyButton(textField: numbersTextField, button: copyButton)
+        Service().copyButton(textToCopy: numbersTextField, button: copyButton)
     }
     
 }

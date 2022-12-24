@@ -59,7 +59,7 @@ class NamesViewController: UIViewController {
     }
     
     @IBAction func copyButton(_ sender: Any) {
-        Service().copyButton(textField: nameTextField, button: copyButton)
+        Service().copyButton(textToCopy: nameTextField, button: copyButton)
     }
     
 }

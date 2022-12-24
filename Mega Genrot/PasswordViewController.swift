@@ -75,6 +75,6 @@ class PasswordViewController: UIViewController {
     }
     
     @IBAction func copyButton(_ sender: Any) {
-        Service().copyButton(textField: passwordTextField, button: copyButton)
+        Service().copyButton(textToCopy: passwordTextField, button: copyButton)
     }
 }
