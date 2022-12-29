@@ -19,8 +19,42 @@ class AnimalNamesViewController: UIViewController {
     var letterArray = ["None", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     var maximumArray = [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
     
-    var startLetterSelected = ""
+    var startLetterSelected = "" {
+        didSet{
+            switch startLetterSelected {
+            case "None": selectedArray = animalsArray
+            case "A": selectedArray = animalsArrayA
+            case "B": selectedArray = animalsArrayB
+            case "C": selectedArray = animalsArrayC
+            case "D": selectedArray = animalsArrayD
+            case "E": selectedArray = animalsArrayE
+            case "F": selectedArray = animalsArrayF
+            case "G": selectedArray = animalsArrayG
+            case "H": selectedArray = animalsArrayH
+            case "I": selectedArray = animalsArrayI
+            case "J": selectedArray = animalsArrayJ
+            case "K": selectedArray = animalsArrayK
+            case "L": selectedArray = animalsArrayL
+            case "M": selectedArray = animalsArrayM
+            case "N": selectedArray = animalsArrayN
+            case "O": selectedArray = animalsArrayO
+            case "P": selectedArray = animalsArrayP
+            case "Q": selectedArray = animalsArrayQ
+            case "R": selectedArray = animalsArrayR
+            case "S": selectedArray = animalsArrayS
+            case "T": selectedArray = animalsArrayT
+            case "U": selectedArray = animalsArrayU
+            case "V": selectedArray = animalsArrayV
+            case "W": selectedArray = animalsArrayW
+            case "X": selectedArray = animalsArrayX
+            case "Y": selectedArray = animalsArrayY
+            default:
+                break
+            }
+        }
+    }
     var maxLetterSelected:Int = 3
+    var selectedArray = animalsArray
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,9 +88,9 @@ class AnimalNamesViewController: UIViewController {
     }
     
     @IBAction func generatorButton(_ sender: Any) {
-        
+
         for _ in 0...animalsArray.count {
-            let randomArray = animalsArray.randomElement()
+            let randomArray = selectedArray.randomElement()
             if startLetterSelected == "None" && randomArray!.count <= maxLetterSelected {
                 animalLabel.text = randomArray
                 break
