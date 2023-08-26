@@ -1,4 +1,9 @@
 
+## ⌛️ Note:
+<b>Please be aware that this project was created some time ago and does not reflect my current skill level. For a glimpse of my recent work and evolving abilities, I recommend exploring my more recent repositories, all of which are presented in <a href="https://oranlevi.dev" target="_blank" >my portfolio</a>.</b>
+
+---
+
 Mega Genrot
 ==========
 An application for generating names, numbers, flipping a coin, custom list and creating a password from a multiple choice of a lowercase letter, an uppercase letter, Special Symbols. The app can make a random number (from, to). A quick copy can be made for convenience, the user can generating from custom list A random selection from a customized list that the user enters .
